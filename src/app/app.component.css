@@ -1,0 +1,72 @@
+h1{
+	font-family: GothamBoldCondensed;
+	letter-spacing: 6px;
+	font-size: 48px;
+	margin: 0;
+	height: 52px;
+}
+
+#title-wrapper{
+	height: 120px;
+	padding-top: 30px;
+}
+
+
+.title{
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#resume{
+	position: relative;
+	height: calc((100vh) - 150px);
+}
+
+.section {
+	position: absolute;
+	max-width: 80%;
+	transition: top 700ms, left 350ms cubic-bezier(.61,0,.04,1.25);
+	left: 0;
+}
+
+.info{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 700ms;
+}
+
+.info-expand{
+	max-height: calc((100vh) - 200px);
+	overflow: scroll;
+}
+
+.info-left {
+	left: -100%;
+}
+
+.info1{
+	top: calc(52px + (1 * ((((100vh) - 150px) - 260px) / 5)));
+}
+
+.info2{
+	top: calc(104px + (2 * ((((100vh) - 150px) - 260px) / 5)));
+}
+
+.info3{
+	top: calc(156px + (3 * ((((100vh) - 150px) - 260px) / 5)));
+}
+
+.info4{
+	top: calc(208px + (4 * ((((100vh) - 150px) - 260px) / 5)));
+}
+
+.info0, .infosel{
+	top: 0;
+}
+
+@media (min-width: 768px) {
+	.section{
+		max-width: 50%;
+	}
+}
+

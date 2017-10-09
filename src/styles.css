@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{ 
+	font-family: GothamXLight; 
+	src: url('./assets/fonts/GothamHTF-XLight.otf'); 
+}
+
+@font-face{
+	font-family: GothamBoldCondensed;
+	src: url('./assets/fonts/GothamHTF-BoldCondensed.otf');
+}
+
+body{
+	color: #404040;
+	margin-left: 5%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	overflow: hidden;
+}
+
+.info{
+	overflow: hidden;
+	max-height: 0;
+}
+
+.info h2{
+	font-family: GothamBoldCondensed;
+	letter-spacing: 3px;
+	/*color: white;*/
+	font-size: 32px;
+}
+
+.info h3{
+	font-family: GothamBoldCondensed;
+	letter-spacing: 2px;
+	/*color: white;*/
+	font-size: 24px;
+}
+
+.info p{
+	font-family: GothamXLight;
+	/*color: white;*/
+	font-size: 19px;
+	margin-bottom: 0.4%;
+}
+
+.info ul{
+	font-family: GothamXLight;
+	/*color: white;*/
+	font-size: 19px;
+	list-style: none;
+	padding-left: 20px;
+}
+
+#gabe{
+	display: none;
+}
+
+#gabe2{
+	position: fixed;
+	bottom: 0;
+	right: 2%;
+	max-height: 80%;
+	max-width: 90%;
+	z-index: -1;
+	transition: opacity 1000ms;
+	display: block;
+}
+
+.gabe2opacity{
+	opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+
+	#gabe{
+		position: fixed;
+		bottom: 0;
+		right: 10%;
+		max-height: 80%;
+		max-width: 90%;
+		z-index: -1;
+		opacity: 1;
+		transition: opacity 1000ms;
+		display: block;
+	}
+
+	#gabe2{
+		display: none;
+	}
+
+	body {
+		margin-left: 5%;
+	}
+}
