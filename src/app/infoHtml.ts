@@ -94,7 +94,7 @@ export const InfoHtml = [
 		You can ask Alexa how much money you have in your savings account, the stock price of a specific company,
 		and how much money you could have potentially made had you invested some of your savings in the stock 
 		market.  The Alexa Skill was targeted towards first time investors so that they can get an initial feel of
-		how vmuch money they can make or lose investing in specific stocks.</p>
+		how much money they can make or lose investing in specific stocks.</p>
 		<br>
 		<h2>PERSONAL WEBSITE</h2>
 		<p>The website you're on now! Because I am not a designer by trade I wanted, I wanted to test my 
